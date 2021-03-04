@@ -17,7 +17,6 @@ namespace CSharDataStructureProject
         public static void SortedDetails()
         {
             List<RainbowSchool> obj = new List<RainbowSchool>();
-
             string path = getPath();
             if (File.Exists(path))
             {
@@ -37,7 +36,7 @@ namespace CSharDataStructureProject
                 Console.WriteLine($"Name: {x.Name}, Class: {x.Class}");
             }
         }
-        public static string getPath()
+        public static string GetPath()
         {
             string dir = Directory.GetCurrentDirectory();
             String path = dir + "\\RainbowSchoolStudentData.txt";
