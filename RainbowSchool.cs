@@ -17,7 +17,7 @@ namespace CSharDataStructureProject
         public static void SortedDetails()
         {
             List<RainbowSchool> obj = new List<RainbowSchool>();
-            string path = getPath();
+            string path = GetPath();
             if (File.Exists(path))
             {
                 string[] contents = File.ReadAllLines(path);
@@ -44,7 +44,7 @@ namespace CSharDataStructureProject
         }
         public static void Search(String name)
         {
-            string path = getPath();
+            string path = GetPath();
             bool flag = false;
             string nm="";
             string cls="";
